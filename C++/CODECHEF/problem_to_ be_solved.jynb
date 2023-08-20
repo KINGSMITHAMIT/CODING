@@ -1,0 +1,48 @@
+if(A[i] == 0)
+            {
+                count_zero++;
+                cout<<0<<endl;
+            }
+            else if(A[i] < 0)
+            {
+                count_neg++;
+                if(count_neg%2 != 0)
+             {
+                 cout << 1 << endl;
+             }
+                 else if (count_neg%2 == 0) {
+                     cout<< 0 << endl;
+                      }
+//count_the_numbe_ of_digits
+
+                      int n;
+cin >> n;  //610
+int digits = 0;
+
+if(n > 0){
+    (digits++); //1
+    n = n/10; //61
+}
+cout << digits << endl;
+
+// revdigit
+int n;
+cin >> n;
+int digit;
+int revdigit = 0;
+while(n>0){
+digit %= n;
+revdigit = ((revdigit*10)+n);
+}
+cout<<revdigit<<endl;
+return 0;
+
+//sinppet-->
+switch (expression)
+{
+case  /*constant-expression */:
+/* EN code */
+break;
+default:
+break;
+}
