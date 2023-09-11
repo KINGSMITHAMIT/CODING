@@ -32,7 +32,7 @@ for(int i =1;i<=n; i++){
     cout<<endl;
 }
 for(int i = n-1;i>=1; i--){
-    for(int j= 1; j<= n ; j++){
+    for(int j= 1; j<= n; j++){
         cout<<min(i,j)<<" ";
     }
     for(int k = n-1; k>=1; k--){
@@ -40,17 +40,19 @@ for(int i = n-1;i>=1; i--){
     }
     cout<<endl;
 }
+cout<<endl;
 // once you are able to do this much then you just need to edit the values like where you are PRINTING 1 REPLACE IT WITH 4 AND VICE VERSA FOR OTHERS TOO.
 // sir's logic and method -->
 for(int i = 1; i <= 2*n-1; i++){
-    for (int j = 1; j <=2*1; j++){
+    for (int j = 1; j <=2*n-1; j++){
         int a = i;
         int b = j;
         if(a > n ) a = 2*n-i;
         if(b > n ) b = 2*n-j;
         int x = min(a,b);
-        cout<< n-x+1;
+        cout<< n-x+1<<" ";
     }
+    cout<<endl;
 }
 
 
