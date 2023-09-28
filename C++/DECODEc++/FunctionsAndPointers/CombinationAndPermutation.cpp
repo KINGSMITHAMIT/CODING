@@ -2,11 +2,11 @@
 using namespace std;
 // int factorial(int x){
 //     int f;
-//     if (x == 0 || x == 1){
+//     if (x <= 1){
 //         f = 1;
 //         return f;
 //         }
-//         f = x*factorial(x-1);
+//      f = x*factorial(x-1);
 //         return f;
 // }
 int fact(int x){
@@ -17,10 +17,14 @@ int fact(int x){
     return f;
     
 }
-// int combination(int n, int r){
-//     int x = fact(n)/(fact(r)*fact(n-r));
-//     return x;
-//     }
+int comb(int n, int r){
+    int x = fact(n)/(fact(r)*fact(n-r));
+    return x;
+    }
+int permut(int n, int r){
+    int y = fact(n)/(fact(n-r));
+    return y;
+}
 int main(){
 cout<<"Radhe_Radhe"<<endl;
 int a, b;
@@ -29,7 +33,10 @@ cin>>a>>b;
 int nfact = fact(a);
 int rfact = fact(b);
 int abfact = fact(a-b);
-int ncr = nfact/(rfact*abfact);
-cout<<ncr;
+int npr = permut(a, b);
+cout<<"The value of permutation is: "<<npr<<endl;
+int ncr = comb(a, b);
+cout<<"The value of combination is: "<<ncr<<endl;
+
 return 0;
 }
