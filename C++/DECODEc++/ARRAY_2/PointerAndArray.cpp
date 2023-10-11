@@ -9,16 +9,16 @@ for(int i = 0; i<size; i++){
     ptr++;
 }
 cout<<endl;
-ptr = arr;
+ptr = arr;      // its a good practice to reinitialize the array's first index to the pointer as it has been stored with an out of the address.
 for(int i = 0; i<size; i++){
     cout<<ptr[i]<<" ";
 }
 cout<<endl;
-ptr = arr;
+ptr = arr;        
 for(int i = 0; i<size; i++){
     cout<<i[ptr]<<" ";
 }
 cout<<endl;
-ptr = arr; // its a good practice to reinitialize the array's first index to the pointer as it has been stored with an out of the address. 
+ptr = arr;  
 return 0;
 }

@@ -24,12 +24,13 @@ arr.push_back(5);
 cout<<"size: "<<arr.size()<<endl;
 cout<<"capacity: "<<arr.capacity()<<endl;
     //to erase the last element stored in the array we use pop_back()
+cout<<"After arr.pop_back()"<<endl;
 arr.pop_back();
 cout<<"size: "<<arr.size()<<endl;
-cout<<"capacity: "<<arr.capacity()<  <endl;
+cout<<"capacity: "<<arr.capacity()<<endl;
 for(int i = 0; i < (arr.size());   i++){
     cout<<"The vector array element "<<i<<" is "<<arr[i]  <<" ";
-    cout<  <endl;
+    cout<<endl;
 }
 
 

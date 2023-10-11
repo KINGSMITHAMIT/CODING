@@ -12,5 +12,7 @@ for(int i = 0; i < (arr.size()); i++){
     cout<<"The vector array element "<<i<<" is "<<arr[i]<<" ";
     cout<<endl;
 }
+cout<<"size: "<<arr.size()<<endl; 
+cout<<"capacity: "<<arr.capacity()<<endl;
 return 0;
 }

@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int display( int arr[], int size){ // or int display( int a[], int size)
+int display( int arr[], int size){ // or int display( int arr[], int size)
     for(int i=0; i<size; i++){ // or for(int i=0; i<=size-1; i++)
         cout << arr[i]<<" ";
     }
