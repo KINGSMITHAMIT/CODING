@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 int m2(int x){
-    
-
 }
 int main(){
 int a1[3][3]={{1,4,7},{2,5,8},{3,6,9}};
