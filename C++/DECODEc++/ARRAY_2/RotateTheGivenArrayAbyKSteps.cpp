@@ -12,7 +12,7 @@ for(int i=0; i<n; i++){
     cout<<arr[(n-1)-i]<<" ";
     }
     cout<<endl;
-    return;
+    return; 
 }
 void rotate(int arr[], int n, int x){  // my logic
 for(int i=1; i<=x; i++){

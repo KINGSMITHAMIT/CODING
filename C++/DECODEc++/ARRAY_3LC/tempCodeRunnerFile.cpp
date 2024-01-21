@@ -1,2 +1,5 @@
-sort01M1(v);
-    display(v);
+    int temp = v[a];
+    v[a] = v[b];
+    v[b] = temp;
+    return;
+}
